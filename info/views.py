@@ -170,7 +170,7 @@ def t_extra_class(request, assign_id):
     }
     return render(request, 'info/t_extra_class.html', context)
 
-
+#EXTRA CLASS NOT INCLUDED
 @login_required()
 def e_confirm(request, assign_id):
     ass = get_object_or_404(Assign, id=assign_id)
